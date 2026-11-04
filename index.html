@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>關東行 2026.11.19–24</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFCF6;--ink:#3E3A39;--pink:#F2A497;--yel:#F6D27A;--sky:#A8D3E6;--grn:#B9DAA5;--b:3px solid var(--ink);--r:22px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Huninn','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;line-height:1.6;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:var(--bg);border-bottom:var(--b);padding:calc(env(safe-area-inset-top,0px) + 8px) 10px 8px;display:flex;gap:6px;overflow-x:auto}
+nav button{flex:0 0 auto;font:inherit;font-size:14px;color:var(--ink);background:var(--bg);border:var(--b);border-radius:99px;padding:3px 12px;cursor:pointer}
+nav button:active,nav button.on{background:var(--yel)}
+main{max-width:640px;margin:0 auto;padding:calc(64px + env(safe-area-inset-top,0px)) 14px 40px}
+section{margin-top:26px}
+h2{font-size:22px;margin:0 0 12px;display:inline-block;background:var(--yel);border:var(--b);border-radius:99px;padding:0 16px}
+.card{background:#fff;border:var(--b);border-radius:var(--r);padding:14px 16px;margin-bottom:12px}
+.hero{background:var(--sky);border:var(--b);border-radius:28px;overflow:hidden;text-align:center}
+.hero svg{display:block;width:100%;height:auto}
+.hero .t{background:var(--bg);border-top:var(--b);padding:12px}
+.hero h1{margin:0;font-size:28px}.hero p{margin:2px 0 0;font-size:14px}
+.cd{display:flex;gap:8px;justify-content:center;margin-top:10px}
+.cd div{background:var(--pink);border:var(--b);border-radius:16px;padding:2px 10px;min-width:62px}
+.cd b{font-size:24px;display:block;line-height:1.2}.cd span{font-size:12px}
+.fl{display:flex;align-items:center;justify-content:space-between;gap:6px;text-align:center}
+.fl b{font-size:26px;display:block}.fl small{display:block;font-size:12px}
+.fl .mid{flex:1;border-top:3px dashed var(--ink);position:relative;height:0}
+.fl .mid::after{content:"✈";position:absolute;left:50%;top:-14px;transform:translateX(-50%);background:#fff;padding:0 4px}
+.tag{display:inline-block;font-size:12px;border:2px solid var(--ink);border-radius:99px;padding:0 9px;margin-right:4px;line-height:1.5}
+.t-air{background:var(--sky)}.t-train{background:var(--grn)}.t-car{background:var(--pink)}.t-walk{background:var(--yel)}.t-must{background:var(--pink);font-weight:bold}.t-stay{background:#fff}
+.days{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px}
+.days button{flex:0 0 auto;font:inherit;text-align:center;background:#fff;border:var(--b);border-radius:18px;padding:2px 12px;cursor:pointer;color:var(--ink)}
+.days button b{display:block;font-size:17px}.days button span{font-size:12px}
+.days button.on{background:var(--pink)}
+.tl{border-left:var(--b);margin:6px 0 0 12px;padding-left:18px}
+.it{position:relative;margin-bottom:14px}
+.it::before{content:"";position:absolute;left:-29px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--grn);border:var(--b)}
+.it.must::before{background:var(--pink)}
+.it time{font-size:13px;color:#7a716e;display:block}
+.pop{animation:pop .5s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pop{0%{transform:translateY(24px) scale(.94);opacity:0}100%{transform:none;opacity:1}}
+.chk{display:flex;gap:10px;align-items:center;padding:6px 0;border-bottom:2px dashed #e5dccf;cursor:pointer}
+.chk:last-child{border:0}
+.chk input{appearance:none;flex:0 0 26px;height:26px;border:var(--b);border-radius:9px;background:#fff;margin:0;cursor:pointer}
+.chk input:checked{background:var(--grn)}
+.chk input:checked::after{content:"✓";display:block;text-align:center;line-height:20px;font-weight:bold}
+.chk input:checked+span{text-decoration:line-through;opacity:.5}
+.bar{height:16px;border:var(--b);border-radius:99px;background:#fff;overflow:hidden;margin-bottom:8px}.bar i{display:block;height:100%;background:var(--grn);width:0;transition:width .4s}
+.row{display:flex;justify-content:space-between;gap:8px;padding:3px 0}
+input.num{font:inherit;width:100%;border:var(--b);border-radius:14px;padding:6px 12px;background:var(--bg);color:var(--ink)}
+.res{background:var(--yel);border:var(--b);border-radius:16px;padding:8px 14px;margin-top:10px;font-size:20px;text-align:center}
+.wx{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.wx .card{margin:0;text-align:center;padding:10px}.wx big{font-size:28px;display:block}
+small.n{display:block;font-size:12px;color:#7a716e;margin-top:6px}
+.float{animation:fl 4s ease-in-out infinite}.drift{animation:dr 14s linear infinite}.fall{animation:fa 7s linear infinite}
+@keyframes fl{50%{transform:translate(8px,-6px)}}
+@keyframes dr{from{transform:translateX(-40px)}to{transform:translateX(40px)}}
+@keyframes fa{from{transform:translate(0,-10px) rotate(0)}to{transform:translate(-20px,200px) rotate(200deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.jp{display:flex;justify-content:space-between;align-items:center;gap:8px;border-bottom:2px dashed #e5dccf;padding:8px 0}.jp:last-child{border:0}.jp b{font-size:18px}.jp .n{margin:0;font-size:13px}.jp button{flex:0 0 42px;height:42px;border:var(--b);border-radius:50%;background:var(--sky);font-size:16px;cursor:pointer}.jp button:active{background:var(--yel)}.jh{display:block;margin:12px 0 2px;background:var(--grn);border:2px solid var(--ink);border-radius:99px;padding:0 12px;width:max-content}
+</style></head><body>
+<nav id="nav"></nav>
+<main>
+<section id="home" style="margin-top:0">
+<div class="hero">
+<svg viewBox="0 0 360 210" role="img" aria-label="富士山與飛機插圖">
+<rect width="360" height="210" fill="#A8D3E6"/>
+<circle cx="285" cy="48" r="24" fill="#F6D27A" stroke="#3E3A39" stroke-width="3"/>
+<g class="drift"><path d="M30 60h60a14 14 0 000-28 18 18 0 00-34-4 14 14 0 00-26 32z" fill="#fff" stroke="#3E3A39" stroke-width="3"/></g>
+<path d="M60 160L160 52q20-20 40 0l100 108z" fill="#fff" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+<path d="M135 80l25-28q20-20 40 0l25 28-20-8-15 12-14-12-14 12-14-12z" fill="#A8D3E6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+<g class="float"><path d="M40 98h70q12 0 12 8t-12 8H60z" fill="#fff" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/><path d="M62 106l-14-18h12l16 18z" fill="#F2A497" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/><circle cx="100" cy="105" r="2.5" fill="#3E3A39"/><circle cx="90" cy="105" r="2.5" fill="#3E3A39"/></g>
+<rect x="-5" y="150" width="370" height="70" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3"/>
+<rect x="30" y="168" width="130" height="26" rx="10" fill="#F2A497" stroke="#3E3A39" stroke-width="3"/>
+<rect x="42" y="174" width="22" height="12" rx="4" fill="#fff" stroke="#3E3A39" stroke-width="2"/><rect x="72" y="174" width="22" height="12" rx="4" fill="#fff" stroke="#3E3A39" stroke-width="2"/><rect x="102" y="174" width="22" height="12" rx="4" fill="#fff" stroke="#3E3A39" stroke-width="2"/>
+<rect x="30" y="184" width="130" height="4" fill="#F6D27A"/>
+<g transform="translate(250 130)"><rect x="0" y="0" width="6" height="24" fill="#3E3A39"/><circle cx="3" cy="-6" r="16" fill="#F2A497" stroke="#3E3A39" stroke-width="3"/><circle cx="-12" cy="4" r="11" fill="#F6D27A" stroke="#3E3A39" stroke-width="3"/></g>
+<g class="fall"><path d="M300 0l5 8 8-2-3 8 6 5-9 1-1 9-6-6-6 6-1-9-9-1 6-5-3-8 8 2z" fill="#F2A497" stroke="#3E3A39" stroke-width="2" transform="scale(.6)"/></g>
+<g class="fall" style="animation-delay:-3s"><path d="M120 0l5 8 8-2-3 8 6 5-9 1-1 9-6-6-6 6-1-9-9-1 6-5-3-8 8 2z" fill="#F6D27A" stroke="#3E3A39" stroke-width="2" transform="translate(150 0) scale(.6)"/></g>
+</svg>
+<div class="t"><h1>關東行・楓葉之旅</h1><p>2026/11/19 – 11/24 ・ 3位大人 ・ 立川 / 昭島 / 山梨</p>
+<div class="cd" id="cd"></div></div></div>
+</section>
+
+<section id="flight"><h2>✈ 航班</h2>
+<div class="card"><span class="tag t-air">去程</span> 星宇 JX802 ・ 11/19（四）
+<div class="fl" style="margin-top:8px"><div><b>10:10</b>台北 TPE<small>T1</small></div><div class="mid"></div><div><b>14:20</b>東京 NRT<small>T2</small></div></div></div>
+<div class="card"><span class="tag t-air">回程</span> 星宇 JX801 ・ 11/24（二）
+<div class="fl" style="margin-top:8px"><div><b>13:45</b>東京 NRT<small>T2</small></div><div class="mid"></div><div><b>16:50</b>台北 TPE<small>T1</small></div></div></div>
+</section>
+
+<section id="plan"><h2>🗓 每日行程</h2>
+<div class="days" id="days"></div>
+<div class="card" id="day"></div>
+</section>
+
+<section id="todo"><h2>✅ 待辦清單</h2>
+<div class="card"><div class="bar"><i id="bar"></i></div><div id="chks"></div></div>
+</section>
+
+<section id="stay"><h2>🏨 住宿・費用</h2>
+<div class="card"><span class="tag t-stay">11/19–21</span><b>立川民宿</b><br>2晚 ・ 一人 2,500 元（平均 1,250／晚）</div>
+<div class="card"><span class="tag t-stay">11/21–23</span><b>東横INN 昭島</b><br>禁煙雙床房（15㎡）29,600 円<br>禁煙無障礙單人房（17㎡）18,600 円<br>一人 3,363 元（平均 1,682／晚）</div>
+<div class="card"><span class="tag t-stay">11/23</span><b>立川麗晶飯店</b><br>1晚 ・ 2,671＋1,631 元 ・ 一人 1,434 元</div>
+<div class="card"><span class="tag t-car">租車</span><b>Toyota Rent a Car 立川南口</b><br>11/21 09:00–20:00 ・ 22,000 円</div>
+<div class="card"><div class="row"><span>機票</span><b>16,494 元</b></div><div class="row"><span>住宿（一人約）</span><b>7,297 元</b></div><div class="row" style="border-top:3px solid var(--ink);margin-top:4px"><span>機＋宿 約</span><b>23,791 元</b></div></div>
+</section>
+
+<section id="tool"><h2>💴 日幣換算</h2>
+<div class="card">
+<label>日圓 JPY<input class="num" id="jpy" type="number" inputmode="decimal" value="10000"></label>
+<label style="display:block;margin-top:8px">匯率（1 日圓 = ? 台幣，可自行修改）<input class="num" id="rate" type="number" step="0.001" inputmode="decimal" value="0.209"></label>
+<div class="res" id="res"></div>
+<div style="margin-top:10px">
+<div class="row"><span>租車 22,000 円</span><b id="c1"></b></div>
+<div class="row"><span>昭島雙床房 29,600 円</span><b id="c2"></b></div>
+<div class="row"><span>昭島單人房 18,600 円</span><b id="c3"></b></div></div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px"><a class="tag t-air" style="font-size:14px;padding:2px 12px;color:inherit" href="https://www.google.com/finance/quote/JPY-TWD" target="_blank" rel="noopener">Google 財經 ↗</a><a class="tag t-train" style="font-size:14px;padding:2px 12px;color:inherit" href="https://rate.bot.com.tw/xrt?Lang=zh-TW" target="_blank" rel="noopener">臺灣銀行牌告 ↗</a><a class="tag t-walk" style="font-size:14px;padding:2px 12px;color:inherit" href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=JPY&To=TWD" target="_blank" rel="noopener">XE 匯率 ↗</a></div><small class="n">點連結查當下匯率，再填入上方「匯率」欄即可。預設值為參考值（依住宿帳面推算），非即時匯率；現金換匯請以銀行牌告為準。</small></div>
+</section>
+
+<section id="wx"><h2>🌤 天氣資訊</h2>
+<div class="wx">
+<div class="card"><big>🍂</big><b>東京・立川</b><br>約 17° / 7°C<br>多晴天、早晚涼</div>
+<div class="card"><big>🗻</big><b>山梨（11/21）</b><br>約 13° / 2°C<br>河口湖周邊更冷</div>
+<div class="card"><big>🌧</big><b>降雨</b><br>11月偏少<br>備輕便雨具</div>
+<div class="card"><big>🧥</big><b>穿搭</b><br>洋蔥式穿法<br>外套＋圍巾</div></div>
+<small class="n">以上為 11 月下旬關東平均氣候，並非即時預報。出發前一週請至 <a href="https://tenki.jp" style="color:inherit">tenki.jp</a> 或日本氣象廳確認。</small>
+</section>
+<section id="jp"><h2>🗣 實用日語</h2>
+<div class="days" id="jtabs"></div>
+<div class="card" id="jlist"></div>
+<small class="n">點 🔊 可播放日語發音（需裝置支援日語語音）。</small>
+</section>
+</main>
+<script>
+const D=[
+{d:"11/19",w:"四",t:"抵達日 ・ 住立川民宿",i:[
+["06:00","出發前往桃園機場（06:00–06:30）","walk"],["08:00","抵達桃機（08:00–08:30）","walk"],["14:20","抵達成田機場 T2","air"],
+["15:18","搭 N'EX 32 → 東京（16:14 到）","train"],["16:29","JR 中央特快（高尾行）2番線 → 立川（17:11 到）","train"],
+["17:11","抵達立川站，入住民宿","walk"],["17:00–20:00","民宿附近逛逛或休息","walk"]]},
+{d:"11/20",w:"五",t:"應現院法會 ・ 住立川民宿",i:[
+["10:30","應現院 笠法善神法會","walk",1],["午餐","於應現院用餐","walk"],["下午","參拜總本部境內、復建真澄寺","walk",1]]},
+{d:"11/21",w:"六",t:"山梨自駕 ・ 住東橫INN昭島",i:[
+["08:00","前往立川南口 Toyota 取車","walk"],["09:00","開車載行李至東橫INN昭島寄放","car"],
+["10:00–18:00","山梨散策（自駕）","car",1],["18:00–20:00","返回昭島，20:00 前還車","car"]]},
+{d:"11/22",w:"日",t:"圓成靈廟莊嚴法會 ・ 住東橫INN昭島",i:[
+["08:00","起床、吃早餐","walk"],["09:00","前往應現苑參加圓成靈廟莊嚴法會","walk",1],["10:30","真如靈廟圓成莊嚴","walk",1],
+["16:30–17:30","前往總本部參拜靈廟","walk",1],["晚上","昭島逛商場或立川用餐","walk"]]},
+{d:"11/23",w:"一",t:"勤勞感謝日 ・ 住立川麗晶飯店",i:[
+["上午","參拜總本部第一、二精舍","walk",1],["彈性","可安排：友心院、吉祥寺、高尾山，或東京新宿、上野等","train"],["晚上","入住立川麗晶飯店","walk"]]},
+{d:"11/24",w:"二",t:"返程日",i:[
+["08:31","JR 中央線快速（東京行）3番線，立川 → 新宿（9:16）","train"],["09:40","搭 N'EX 15，新宿 → 成田第二航廈（10:54）","train"],
+["13:45","JX801 成田 T2 起飛","air"],["16:50","抵達桃園機場 T1","air"]]}];
+const TG={air:["飛機","t-air"],train:["電車","t-train"],car:["開車","t-car"],walk:["步行/現場","t-walk"]};
+const T=[["護照（效期 6 個月以上）",0],["Visit Japan Web 填寫、QR code 截圖",0],["國際／日本駕照（台灣駕照＋日文譯本）",0],["租車預約確認單（Toyota 立川南口）",0],["住宿訂房確認信（立川、昭島、麗晶）",0],["Suica / PASMO 或 N'EX 車票",0],["網卡 / eSIM / 行動網路",0],["日幣現金與信用卡",0],["行動電源、轉接頭",0],["保暖外套、圍巾、雨具",0],["法會服裝、念珠等用品",0],["常備藥品",0]];
+const $=s=>document.querySelector(s);
+const nav=[["home","首頁"],["flight","航班"],["plan","行程"],["todo","待辦"],["stay","住宿"],["tool","換算"],["wx","天氣"],["jp","日語"]];
+$("#nav").innerHTML=nav.map(n=>`<button data-k="${n[0]}">${n[1]}</button>`).join("");
+$("#nav").onclick=e=>{const k=e.target.dataset.k;if(k)document.getElementById(k).scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth"})};
+function show(n){
+ document.querySelectorAll("#days button").forEach((b,i)=>b.classList.toggle("on",i==n));
+ const x=D[n];
+ $("#day").innerHTML=`<b style="font-size:18px">${x.d}（${x.w}）${x.t}</b><div class="tl">${x.i.map(r=>`<div class="it ${r[3]?"must":""}" style="margin-top:12px"><time>${r[0]}</time><span class="tag ${TG[r[2]][1]}">${TG[r[2]][0]}</span>${r[3]?'<span class="tag t-must">必去</span>':""}${r[1]}</div>`).join("")}</div>`;
+ const c=$("#day");c.classList.remove("pop");void c.offsetWidth;c.classList.add("pop");
+}
+$("#days").innerHTML=D.map((x,i)=>`<button><b>${x.d}</b><span>週${x.w}</span></button>`).join("");
+document.querySelectorAll("#days button").forEach((b,i)=>b.onclick=()=>show(i));show(0);
+// checklist
+let st=[];try{st=JSON.parse(localStorage.getItem("kt")||"[]")}catch(e){}
+function drawT(){
+ $("#chks").innerHTML=T.map((t,i)=>`<label class="chk"><input type="checkbox" data-i="${i}" ${st[i]?"checked":""}><span>${t[0]}</span></label>`).join("");
+ const n=T.filter((_,i)=>st[i]).length;$("#bar").style.width=n/T.length*100+"%";
+}
+$("#chks").onchange=e=>{st[e.target.dataset.i]=e.target.checked;try{localStorage.setItem("kt",JSON.stringify(st))}catch(x){}drawT()};drawT();
+// japanese
+const J=[["基本禮貌",[["大丈夫です","沒關係／不用了／可以","daijoubu desu"],["はい／いいえ","是／不是","hai / iie"],["わかりません","我聽不懂／我不明白","wakarimasen"]]],
+["飯店住宿",[["チェックインをお願いします。","我要辦理入住","Chekkuin o onegaishimasu."],["予約しています。","我有預約","Yoyaku shiteimasu."],["〇〇の名前で予約しています。","我用〇〇的名字預訂","〇〇 no namae de yoyaku shiteimasu."],["パスポートです。","這是護照","Pasupooto desu."],["タオルをもう一枚ください。","請再給我一條毛巾","Taoru o mou ichimai kudasai."],["荷物を預けてもいいですか？","可以寄放行李嗎？","Nimotsu o azukete mo ii desu ka?"]]],
+["餐廳用餐",[["3人です。","我們三個人","sannin desu."],["メニューをください。","請給我菜單","Menyuu o kudasai."],["おすすめは何ですか？","有什麼推薦的？","Osusume wa nan desu ka?"],["これをください。","我要這個","Kore o kudasai."],["これを2つください。","我要兩份這個","Kore o futatsu kudasai."],["お水をください。","請給我水","Omizu o kudasai."],["お箸をください。","請給我筷子","Ohashi o kudasai."],["取り皿をください。","請給我分食小盤","Torizara o kudasai."],["お会計をお願いします。","麻煩結帳","Okaikei o onegaishimasu."],["別々に払えますか？","可以分開付款嗎？","Betsubetsu ni haraemasu ka?"]]],
+["購物逛街",[["これはいくらですか？","這個多少錢？","Kore wa ikura desu ka?"],["これをください。","我要這個","Kore o kudasai."],["これを見てもいいですか？","可以看看這個嗎？","Kore o mite mo ii desu ka?"],["試着できますか？","可以試穿嗎？","Shichaku dekimasu ka?"],["他のサイズはありますか？","有其他尺寸嗎？","Hoka no saizu wa arimasu ka?"],["もっと大きいサイズはありますか？","有更大的尺寸嗎？","Motto ookii saizu wa arimasu ka?"],["もっと小さいサイズはありますか？","有更小的尺寸嗎？","Motto chiisai saizu wa arimasu ka?"],["袋をください。","請給我袋子","Fukuro o kudasai."],["袋はいりません。","不需要袋子","Fukuro wa irimasen."],["クレジットカードは使えますか？","可以刷信用卡嗎？","Kurejitto kaado wa tsukaemasu ka?"],["免税できますか？","可以退稅嗎？","Menzei dekimasu ka?"]]],
+["其他",[["トイレはどこですか？","廁所在哪裡？","Toire wa doko desu ka?"],["これは何ですか？","這是什麼？","Kore wa nan desu ka?"],["写真を撮ってもいいですか？","可以拍照嗎？","Shashin o totte mo ii desu ka?"],["日本語があまり話せません。","我不太會說日文","Nihongo ga amari hanasemasen."],["英語を話せますか？","您會說英文嗎？","Eigo o hanasemasu ka?"],["ゆっくり話してください。","請說慢一點","Yukkuri hanashite kudasai."]]],
+["數字人數",[["數字 1–10"],["いち","1","Ichi"],["に","2","Ni"],["さん","3","San"],["よん","4","Yon"],["ご","5","Go"],["ろく","6","Roku"],["なな","7","Nana"],["はち","8","Hachi"],["きゅう","9","Kyuu"],["じゅう","10","Juu"],["人數說法"],["ひとり","1人","Hitori"],["ふたり","2人","Futari"],["さんにん","3人","Sannin"],["よにん","4人","Yonin"],["ごにん","5人","Gonin"],["數量（個）"],["ひとつ","1個（一個）","Hitotsu"],["ふたつ","2個（兩個）","Futatsu"],["みっつ","3個（三個）","Mittsu"],["よっつ","4個（四個）","Yottsu"],["いつつ","5個（五個）","Itsutsu"]]]];
+function jshow(n){
+ document.querySelectorAll("#jtabs button").forEach((b,i)=>b.classList.toggle("on",i==n));
+ $("#jlist").innerHTML=J[n][1].map(r=>r.length==1?`<b class="jh">${r[0]}</b>`:`<div class="jp"><div><b>${r[0]}</b><br>${r[1]}<small class="n">${r[2]}</small></div><button data-t="${r[0]}" aria-label="播放發音">🔊</button></div>`).join("");
+ const c=$("#jlist");c.classList.remove("pop");void c.offsetWidth;c.classList.add("pop");
+}
+$("#jtabs").innerHTML=J.map(x=>`<button>${x[0]}</button>`).join("");
+document.querySelectorAll("#jtabs button").forEach((b,i)=>b.onclick=()=>jshow(i));jshow(0);
+$("#jlist").onclick=e=>{const t=e.target.dataset.t;if(!t)return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/〇〇/g,""));u.lang="ja-JP";speechSynthesis.speak(u)}catch(x){}};
+// yen
+const f=n=>"NT$ "+Math.round(n).toLocaleString();
+function cv(){const r=+$("#rate").value||0,j=+$("#jpy").value||0;
+ $("#res").textContent=`¥${j.toLocaleString()} ≈ ${f(j*r)}`;
+ $("#c1").textContent=f(22000*r);$("#c2").textContent=f(29600*r);$("#c3").textContent=f(18600*r)}
+$("#jpy").oninput=$("#rate").oninput=cv;cv();
+// countdown (departure 2026-11-19 10:10 Taipei, UTC+8)
+function cd(){let s=Math.floor((Date.parse("2026-11-19T10:10:00+08:00")-Date.now())/1000);
+ if(s<=0){$("#cd").innerHTML="<div><b>🛫</b><span>旅途愉快！</span></div>";return}
+ const v=[[Math.floor(s/86400),"天"],[Math.floor(s%86400/3600),"時"],[Math.floor(s%3600/60),"分"],[String(s%60).padStart(2,"0"),"秒"]];
+ $("#cd").innerHTML=v.map(a=>`<div><b>${a[0]}</b><span>${a[1]}</span></div>`).join("")}
+cd();setInterval(cd,1000);
+</script></body></html>
